@@ -3,10 +3,10 @@ from django.shortcuts import render
 
 def home(request):
     #return HttpResponse('Hello, World! Home')
-    return render(request, 'base.html')
+    return render(request, 'website/base.html')
 
 def about(request):
-    return HttpResponse('Hello, World! About')
+    return render(request, 'website/base2.html')
 
 def contact(request):
-    return HttpResponse('Hello, World!  Contact')
+    return HttpResponse('Hello, World!  Contact') 

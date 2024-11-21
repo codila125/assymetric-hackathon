@@ -4,12 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Local Connect</title>
+    <title>        
+        {% block title %}
+            Local Connect
+        {% endblock %}</title>
         <link rel="stylesheet" href="{% static 'styles.css' %}">
 </head>
 <body>
     <header>
+        {% block content %}
         <h1>Local Connect</h1>
+        {% endblock %}
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
