@@ -7,6 +7,7 @@ class arts(models.Model):
     built_date = models.DateTimeField()
     description = models.TextField()
     picture = models.ImageField(upload_to='website/arts_pics', blank=True)
+    art_id = models.IntegerField(primary_key=True)
     def __str__(self):
         return self.name
     
