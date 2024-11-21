@@ -14,9 +14,7 @@
 </head>
 <body>
     <header>
-        {% block content %}
         <h1>Local Connect</h1>
-        {% endblock %}
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -29,8 +27,13 @@
     </header>
     <main>
         <!-- Home Section -->
+         <div>
+            {% block content %}
+            {% endblock %}
+         </div>
         <section id="home">
-            <h2>Welcome to Local Connect</h2>
+            <h2>Welcome to Local Connect
+            </h2>
             <p>Connecting tourists with locals for unique experiences.</p>
         </section>
 
