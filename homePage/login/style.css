@@ -4,6 +4,8 @@
             box-sizing: border-box;
             font-size: medium;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background: url('namaste.jpeg') no-repeat center center fixed;
+            background-size: cover; /* Ensures the background image covers the entire window */
         }
 
         body {
@@ -39,6 +41,7 @@
             max-width: 400px;
             text-align: center;
             z-index:1;
+            margin-left: -1030px;
         }
 
         
