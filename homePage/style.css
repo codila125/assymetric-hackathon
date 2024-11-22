@@ -36,7 +36,11 @@ nav a {
     border: 2px solid #e2d0d0;
     margin: 0 5px;
     border-radius: 30px;
+<<<<<<< HEAD
    
+=======
+    margin-left: 10px;
+>>>>>>> 67bfe0b (prabesh1)
     transition: 0.3s;
 }
 
@@ -64,6 +68,9 @@ main {
     
 }
 
+.Welcome{
+    margin-left: 550px;
+}
 .content {
     background: rgba(0, 0, 0, 0.8);
     padding: 50px;
