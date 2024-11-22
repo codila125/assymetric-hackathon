@@ -5,13 +5,13 @@ body {
     background: url('home.jpeg') no-repeat center center/cover;
     background-attachment: fixed;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    /* opacity:0.9; */
+    
 }
 
 header {
     background: rgba(0, 0, 0, 0.7);
     padding: 1rem;
-    /* text-align: center; */
+   
     position: sticky;
     top: 0;
 }
@@ -21,7 +21,7 @@ header h1 {
     margin: 0;
     padding-bottom: 30px;
     padding-top: 20px;
-    color: #ffd700; /* Golden color for the main title */
+    color: #ffd700; 
 }
 
 nav {
@@ -36,7 +36,7 @@ nav a {
     border: 2px solid #e2d0d0;
     margin: 0 5px;
     border-radius: 30px;
-    /* background: rgba(92, 188, 207, 0.2); */
+   
     transition: 0.3s;
 }
 
@@ -60,20 +60,20 @@ main {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: calc(100vh - 120px); /* Subtract header and footer height */
-    /* padding: 20px; */
+    height: calc(100vh - 120px); 
+    
 }
 
 .content {
     background: rgba(0, 0, 0, 0.8);
     padding: 50px;
-    /* border-radius: 10px; */
+    
     max-width: window;
     margin-top: 400px;
 }
 
 .description h2 {
-    color: #ffd700; /* Golden color for headers */
+    color: #ffd700; 
     font-size: 1.8rem;
 }
 
@@ -85,11 +85,11 @@ main {
 footer {
     background: rgba(0, 0, 0, 0.8);
     text-align: center;
-    /* padding: 10px; */
+   
     position: relative;
 }
 
 footer p {
-    /* margin: 0; */
+   
     font-size: 0.9rem;
 }
