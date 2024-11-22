@@ -33,7 +33,7 @@
 
 
         .login-container {
-            background-color: #ffb700; 
+            background-color: #ffb7009d; 
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(245, 192, 4, 2.992);
@@ -41,7 +41,8 @@
             max-width: 400px;
             text-align: center;
             z-index:1;
-            margin-left: -1030px;
+            margin-left: -800px;
+
         }
 
         
