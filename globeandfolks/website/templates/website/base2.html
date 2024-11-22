@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+    About
+{% endblock %}
+
+{% block content %}
+<h1 class = "bg-orange-500 text-3xl">
+    About Globe and Folks
+</h1>
+{% for datas in data %}
+    <div class = "arts">
+        <img src = "{{datas.picture.url}}" class = "arty ">
+    </div>
+{% endfor %}
+{% endblock %}
