@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Explorer - Nepal</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: url('himal.jpg') no-repeat center center fixed;
+            background-size: cover; 
+            color: #721b9d;
+        }
+
+
+        .main-heading {
+            font-size: 79px;
+            font-weight: bold;
+            text-align: center;
+            color: #1deff3fa;
+            background: rgba(188, 230, 161, 0.6);
+            padding: 30px 30px;
+            border-radius: 10px; 
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); 
+            margin-bottom: 10px; 
+        }
+
+        
+        .button-container {
+            display: flex;
+            justify-content: center; 
+            gap: 20px;
+            width: 100%;
+            flex-wrap: wrap; 
+            margin-top: 50px; 
+        }
+
+        
+        .tour-button {
+            background: #007bff; 
+            color: #fff; 
+            border: none;
+            border-radius: 12px;
+            padding: 15px 40px;
+            font-size: 20px; 
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase; 
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); 
+            transition: transform 0.3s, box-shadow 0.3s ease;
+        }
+
+        .tour-button:hover {
+            transform: translateY(-5px); 
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); 
+            background: #c0d667; 
+        }
+
+        .tour-button:active {
+            transform: translateY(2px); 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        @media (max-width: 600px) {
+            .main-heading {
+                font-size: 42px; 
+                margin-bottom: 30px; 
+            }
+
+            .button-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .tour-button {
+                font-size: 18px;
+                padding: 12px 30px;
+                width: 80%; 
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+   
+    <h1 class="main-heading">What are you<br/> looking for?</h1>
+
+    
+    <div class="button-container">
+        <button class="tour-button" data-category="Temples">Temples</button>
+        <button class="tour-button" data-category="Natural Places">Natural Places</button>
+        <button class="tour-button" data-category="Historical Places">Historical Places</button>
+        <button class="tour-button" data-category="Adventure Sports">Adventure Sports</button>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const buttons = document.querySelectorAll(".tour-button");
+
+            buttons.forEach(button => {
+                button.addEventListener("click", () => {
+                    const category = button.getAttribute("data-category");
+                    alert(`You clicked on ${category}! Explore this amazing category.`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
